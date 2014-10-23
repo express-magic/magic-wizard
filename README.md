@@ -1,2 +1,2 @@
-Express Magic: M.
-=======
+magic-wizard
+============
