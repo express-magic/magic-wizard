@@ -1,0 +1,14 @@
+{
+  "name": "magic-wizard",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "commander": "^2.3.0",
+    "inquirer": "^0.8.0",
+    "rimraf": "^2.2.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/express-magic/magic-wizard.git"
+  }
+}
