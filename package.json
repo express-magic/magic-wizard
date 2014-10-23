@@ -7,7 +7,8 @@
     "commander": "^2.3.0",
     "inquirer": "^0.8.0",
     "rimraf": "^2.2.8",
-    "magic-log": "express-magic/magic-log"
+    "magic-log": "express-magic/magic-log",
+    "magic-git": "express-magic/magic-git"
   },
   "repository": {
     "type": "git",
