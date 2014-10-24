@@ -7,22 +7,24 @@ var path = require('path')
   , cli     = require(path.join(__dirname,'lib') )
 ;
 
-program.version('0.0.1');
+function exec() {
+    
+  program.version('0.0.1');
 
-if ( process.argv.length <= 2 ) {
-  cli.promptForAction();
+  if ( process.argv.length <= 2 ) {
+    cli.promptForAction();
+  }
+
+  program
+    .command('*')
+    .description('display help text')
+    .action(printHelp)
+  ;
+
+  program.parse(process.argv);
+
+  function printHelp() {
+    console.log('help text');
+  }
 }
-
-program
-  .command('*')
-  .description('display help text')
-  .action(printHelp)
-;
-
-program.parse(process.argv);
-
-function printHelp() {
-  console.log('help text');
-}
-
-module.exports = program;
+module.exports = exec;
