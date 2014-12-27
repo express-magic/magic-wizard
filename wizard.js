@@ -6,7 +6,6 @@ var path     = require('path')
   , execFile = require('child_process').execFile
   , spawn    = require('child_process').spawn
   , log      = require('magic-log')
-  , nodegit  = require('nodegit')
   , cli      = require(path.join(__dirname, 'lib') )
 ;
 
@@ -22,12 +21,12 @@ module.exports = function xc() {
     .command('test')
     .description('test command')
     .action(function () {
-      log('nodegit:', nodegit);
-      for (var k in nodegit ) {
-        log(nodegit[k]);
-      }
-      var s = nodegit.Submodule();
-      log(s);
+      //log('nodegit:', nodegit);
+      //for (var k in nodegit ) {
+      //  log(nodegit[k]);
+      //}
+      //var s = nodegit.Submodule();
+      //log(s);
     })
   ;
 
@@ -42,4 +41,4 @@ module.exports = function xc() {
   function printHelp() {
     console.log('help text');
   }
-}
+
