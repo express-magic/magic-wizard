@@ -41,4 +41,5 @@ module.exports = function xc() {
   function printHelp() {
     console.log('help text');
   }
+}
 
