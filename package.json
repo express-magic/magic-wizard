@@ -9,6 +9,7 @@
     "inquirer": "^0.8.0",
     "magic-heroku": "express-magic/magic-heroku",
     "magic-log": "git://github.com/express-magic/magic-log",
+    "magic-utils": "git://github.com/express-magic/magic-utils",
     "magic-xc": "express-magic/magic-xc",
     "rimraf": "^2.2.8"
   },
